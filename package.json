@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "migrate:atlas": "node scripts/migrateToAtlas.js",
+    "verify:atlas": "node scripts/verifyAtlas.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
